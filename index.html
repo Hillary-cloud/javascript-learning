@@ -4,16 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* Default body background color (white) */
+        body {
+          background-color: white;
+          color: black;
+          transition: background-color 0.5s, color 0.5s; /* Smooth transition effect */
+        }
+        
+        /* Dark mode: black background and white text */
+        .dark-mode {
+          background-color: black;
+          color: white;
+        }
+      </style>
 </head>
 <body>
-    <h1 id="main-text">Hello world</h1>
-    <input type="radio" name="msg" value="football">
-    <input type="radio" name="msg" value="tennis">
+    <button onclick="toggleBackground()">Toggle Background</button>
+    <h1 id="main-text" class="main sub" style="color:orange; background-color: black;">Hello world</h1>
+    <input type="radio" name="msg" value="football" id="sport">
+    <!-- <input type="radio" name="msg" value="tennis"> -->
     <div id="container">
         <h2 class="">Hello world2</h2>
         <h2 class="text">Hello world3</h2>
         <h2 class="">Hello world4</h2>
     </div>
+    <input id="greet" type="text" value="">
+    <button onclick="sayHello()">Click me</button>
     <script src="script.js"></script>
 </body>
 </html>

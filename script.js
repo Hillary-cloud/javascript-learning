@@ -728,8 +728,16 @@ const companies = [
 // console.log(elements.lastElementChild) //.children gets all the child elements, .firstElementChild gets the first element, .lastElementChild gets the last element
 
 // Getting previous and next sibling
-const elements = document.querySelector('.text')
-console.log(elements.nextElementSibling) //.previousElementSibling gets the previous element of the sibling, .nextElementSibling gets the next element of the same sibling
+// const elements = document.querySelector('.text')
+// console.log(elements.nextElementSibling) //.previousElementSibling gets the previous element of the sibling, .nextElementSibling gets the next element of the same sibling
+
+// appendChild - used to add a node to the end of the list of child nodes of a specified parent node 
+
+// const element = document.createElement('div')
+// element.innerHTML = "<p id='text'>hello</p>"
+// element.id = 'title'
+// document.body.appendChild(element)
+// console.log(element)
 
 // Manipulating HTML elements
 // Modifying Content
@@ -742,12 +750,83 @@ console.log(elements.nextElementSibling) //.previousElementSibling gets the prev
 // textContent - Modifies only the text content of an element, ignoring any HTML tags.
 
 // const element = document.getElementById('main-text');
-// element.textContent = "New Content";
+// element.textContent = "<h1>New Content</h1>";
+
+// ADDING AND REMOVING CLASSES
+// const removeElement = document.getElementById('container')
+// removeElement.removeChild(removeElement.firstElementChild) //remove gets rid of all the child elements while removeChild specifies the child element to be removed
+
+// const addElement = document.getElementById('container')
+// const result = document.createElement('h2')
+// result.textContent = "Hellow world 5"
+// addElement.insertBefore(result, addElement.firstElementChild)
 
 // Attribute methods
 
-// Manipulating Element's styles
+// const element = document.getElementById("sport")
+// console.log(element.getAttribute('type'))
+
+// const element = document.getElementById("sport")
+// element.setAttribute('class','sub')
+// console.log(element)
+
+// hasAttribute returns true or false based on if the attribute exists or not
+// const element = document.getElementById("sport")
+// console.log(element.hasAttribute('type'))
+
+// const element = document.getElementById("sport")
+// element.removeAttribute('value')
+// console.log(element)
+
+
+// MANIPULATING ELEMENT'S STYLES
+// You can change the CSS styles of an element by modifying the style property.
+
+// const element = document.getElementById('main-text')
+// console.log(element.style)
+
+// const element = document.getElementById("main-text")
+// element.style.backgroundColor = "purple"
+
+// const element = document.getElementById("main-text")
+// element.style.cssText += "padding: 20px; height: 100px"//.cssText always over rides the existing inline style, use += to concatinate bothe css
+
+// CLASS NAME/LIST 
+// const element = document.getElementById('main-text')
+// console.log(element.className)
+
+// const element = document.getElementById('main-text')
+// element.className += ' new'
+// console.log(element)
+
+// const element = document.getElementById('main-text')
+// element.classList.toggle('main') //add,remove,replace,contains(checks if a class i available and returns true or false),
+// // toggle(if a class name is available, it removes it but if not available, it adds it)
+// console.log(element)
+
+// const sayHello = () => {
+//     const inputValue = document.getElementById('greet').value
+
+//     alert('hello '+ inputValue)
+// }
+
+// function toggleBackground(){
+//     document.body.classList.toggle('dark-mode')
+// }
+
 
 // JavaScript Events
 
-// const changeColor = document.getElementById("text").style.color = "green"
+
+
+// Summary of Key DOM Manipulation Techniques:
+// Selecting elements: Use methods like getElementById(), querySelector(), etc.
+// Modifying content: Use innerHTML, textContent, etc.
+// Changing attributes: Use setAttribute() or access properties directly.
+// Changing styles: Modify the style property.
+// Adding/removing classes: Use classList.
+// Creating and inserting elements: Use createElement() and appendChild().
+// Removing elements: Use remove() or removeChild().
+// Handling events: Use addEventListener() to respond to user actions.
+
+
