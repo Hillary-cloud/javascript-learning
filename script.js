@@ -753,6 +753,10 @@ const companies = [
 // element.textContent = "<h1>New Content</h1>";
 
 // ADDING AND REMOVING CLASSES
+
+// const removeElement = document.getElementById('container')
+// removeElement.remove(removeElement)
+
 // const removeElement = document.getElementById('container')
 // removeElement.removeChild(removeElement.firstElementChild) //remove gets rid of all the child elements while removeChild specifies the child element to be removed
 
@@ -784,10 +788,9 @@ const companies = [
 
 // const element = document.getElementById('main-text')
 // console.log(element.style)
-
-// const element = document.getElementById("main-text")
 // element.style.backgroundColor = "purple"
 
+// const element = document.getElementById("main-
 // const element = document.getElementById("main-text")
 // element.style.cssText += "padding: 20px; height: 100px"//.cssText always over rides the existing inline style, use += to concatinate bothe css
 
@@ -800,7 +803,7 @@ const companies = [
 // console.log(element)
 
 // const element = document.getElementById('main-text')
-// element.classList.toggle('main') //add,remove,replace,contains(checks if a class i available and returns true or false),
+// element.classList.toggle('main') //add,remove,replace,contains(checks if a class is available and returns true or false),
 // // toggle(if a class name is available, it removes it but if not available, it adds it)
 // console.log(element)
 
@@ -816,6 +819,28 @@ const companies = [
 
 
 // JavaScript Events
+// An event is an action that occurs in the web browser e.g: click, mousemove, load events etc
+// event models are event bubbling(event flows from the most specific (i.e the one with the event listener) to the least specific) and event capturing
+{/* <button onclick="alert('goodmorning')">alert goodmorning</button> */}
+// function sayGoodMorning(){
+//     alert('goodmorning')
+// }
+// document.getElementById('changeContent').addEventListener('click', function(){ //removeEventListener removes the event
+//     const contentDiv = document.getElementById('content')
+//     contentDiv.innerHTML = "<h2>Content Changed!</h2><p>This is the new content.</p>"
+
+//     contentDiv.style.cssText = 'color: green; font-family: ariel sans-serif'
+
+// }) 
+// or 
+// const btn = document.getElementById('changeContent')
+// btn.onclick =  function(){ // = null to remove event listener
+//     const contentDiv = document.getElementById('content')
+//     contentDiv.innerHTML = "<h2>Content Changed!</h2><p>This is the new content.</p>"
+
+//     contentDiv.style.cssText = 'color: green; font-family: ariel sans-serif'
+
+// }
 
 
 
